@@ -1,28 +1,29 @@
-#message{
-    color: greenyellow;
+#myform{
+    color: black;
     font-family: courier;
-    font-size: 110%;
+    font-size: 90%;
     padding: 50px;
     max-width: 400px;
-    max-height: 400px;
+    max-height: 300px;
     height: fit-content;
     margin: auto;
-    border: 3px solid indigo;
-    background-color: palevioletred;
-    opacity: 0;
-    justify-content : center;
-    align-items: center;
-  
+    overflow: hidden;
+    background-color: pink;
+    border: 2px solid salmon;
 }
-#hdr{
-    color: palegreen;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-    font-size: 150%;
-}
-#message.hidden{
-    opacity: 1;
-}
-body{
-    height: 100vh;
-    background-image: url('bg.jpeg');
+#submit{
+    color: white;
+    font-family: verdana;
+    font-size: 80%;
+    border: 2px solid rebeccapurple;
+    padding: 5px;
+    margin: auto;
+    width: 100px;
+    text-align:center;
+    background-color: blue;
+    overflow: hidden;
+    margin: auto  ;
+    display: grid;
+    margin-top: 18px;
+    text-transform: uppercase;
 }
