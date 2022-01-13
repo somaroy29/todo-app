@@ -1,29 +1,36 @@
-#myform{
-    color: black;
-    font-family: courier;
-    font-size: 90%;
-    padding: 50px;
-    max-width: 400px;
-    max-height: 300px;
-    height: fit-content;
-    margin: auto;
-    overflow: hidden;
-    background-color: pink;
-    border: 2px solid salmon;
-}
-#submit{
+
+#btn {
     color: white;
     font-family: verdana;
     font-size: 80%;
     border: 2px solid rebeccapurple;
     padding: 5px;
     margin: auto;
-    width: 100px;
     text-align:center;
     background-color: blue;
     overflow: hidden;
     margin: auto  ;
     display: grid;
     margin-top: 18px;
-    text-transform: uppercase;
-}
+  }
+  #content{
+    
+    color: steelblue;
+    font-family: courier;
+    font-size: 90%;
+    padding: 50px;
+    max-width: 200px;
+    max-height: 200px;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+    background-color: seashell;
+
+  }
+  #content.open{
+    max-height: 1000px;
+    background-color: seashell;
+    color: steelblue;
+    font-family: courier;
+  }
+ 

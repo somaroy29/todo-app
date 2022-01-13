@@ -1,22 +1,20 @@
-var myform=document.forms.newform;
-var message=document.getElementById("message");
+function setUpEvents(){
+    const content=document.getElementById("content");
+    const btn=document.getElementById("btn");
 
-myform.onsubmit=function(){
-    if(myform.name.value.trim()===''){
-        message.innerHTML="please enter your name";
-        return false;
-    }
-    else{
-        message.innerHTML="";
-        return true;
-    }
+    btn.onclick=function(){
+        if(content.className=="open"){
+            //shrink the box
+            content.className="";
+            btn.innerHTML="Show More";
+        }else{
+            content.className="open";
+            btn.innerHTML="Show Less";
+        }
+
+    };
+}
+
+window.onload=function(){
+    setUpEvents();
 };
-
-
-
-
-
-//blur function
-/*myform2.name.onblur=function(){
-    myform2.name.style.border="none";
-}*/
