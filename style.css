@@ -1,36 +1,41 @@
-
-#btn {
-    color: white;
-    font-family: verdana;
-    font-size: 80%;
-    border: 2px solid rebeccapurple;
-    padding: 5px;
-    margin: auto;
-    text-align:center;
-    background-color: blue;
-    overflow: hidden;
-    margin: auto  ;
-    display: grid;
-    margin-top: 18px;
-  }
-  #content{
-    
-    color: steelblue;
-    font-family: courier;
+.container{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 90%;
-    padding: 50px;
-    max-width: 200px;
-    max-height: 200px;
+    padding: 30px;
+    width: 500px;
+    height: 30px;
     height: fit-content;
     margin: auto;
-    overflow: hidden;
-    background-color: seashell;
-
-  }
-  #content.open{
-    max-height: 1000px;
-    background-color: seashell;
-    color: steelblue;
-    font-family: courier;
-  }
- 
+    background-color: skyblue;
+    border: 2px solid black;
+    text-transform: uppercase;
+}
+.nav-center{
+    color: orange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90%;
+    padding: 50px;
+    height: fit-content;
+    margin: auto;
+    text-align: center;   
+}
+.nav-links{
+    color: orange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 120%;
+    list-style-position: inside;
+}  
+#btn{
+    font-size: 90%;
+    color: red;
+    padding: 5px;
+    height: 90%;
+    margin: auto;
+    width: 80px;
+    height: 45px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    text-align: center;  
+    shape-outside: round;
+}
