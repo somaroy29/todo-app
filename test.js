@@ -1,20 +1,30 @@
-function setUpEvents(){
-    const content=document.getElementById("content");
-    const btn=document.getElementById("btn");
+let count=0;
 
-    btn.onclick=function(){
-        if(content.className=="open"){
-            //shrink the box
-            content.className="";
-            btn.innerHTML="Show More";
-        }else{
-            content.className="open";
-            btn.innerHTML="Show Less";
+const value=document.querySelector("#value");
+const button=document.querySelectorAll(".btn");
+
+
+button.forEach(function(btn){
+    btn.addEventListener("click",function(e){
+        const styles = e.currentTarget.classList;
+        if(styles.contains("decrease")){
+            count--;
         }
-
-    };
-}
-
-window.onload=function(){
-    setUpEvents();
-};
+        else if(styles.contains("increase")){
+            count++;
+        }
+        else{
+            count=0;
+        }
+        if(count>0){
+            value.style.color="green";
+        }
+        if(count<0){
+            value.style.color="red";
+        }
+        if(count==0){
+            value.style.color="black";
+        }
+        value.textContent=count;
+    });
+});

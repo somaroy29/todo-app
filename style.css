@@ -1,41 +1,27 @@
-.container{
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 90%;
-    padding: 30px;
-    width: 500px;
-    height: 30px;
+#counter{
+    color: yellow;
+    font-size: 130%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    width: 300px;
+    max-height: 1900px;
     height: fit-content;
-    margin: auto;
-    background-color: skyblue;
-    border: 2px solid black;
-    text-transform: uppercase;
-}
-.nav-center{
-    color: orange;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 90%;
-    padding: 50px;
-    height: fit-content;
-    margin: auto;
-    text-align: center;   
-}
-.nav-links{
-    color: orange;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 120%;
-    list-style-position: inside;
-}  
-#btn{
+    background-color: wheat;
+text-align: center; 
+margin: auto;
+ }
+
+.btn{
     font-size: 90%;
     color: red;
     padding: 5px;
-    height: 90%;
-    margin: auto;
-    width: 80px;
-    height: 45px;
-    background-color: yellowgreen;
+    height: fit-content;
     border: 2px solid black;
-    text-align: center;  
-    shape-outside: round;
+    text-align: center;     
+    justify-content: center;
+}
+#value{
+    font-size: 350%;
+    color: black;
+    padding: 25px;
 }
