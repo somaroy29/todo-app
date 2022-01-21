@@ -1,31 +1,14 @@
-.title{
-    text-align: center;
-    color: grey;
+.links{
     font-size: 30px;
-    text-decoration: underline dashed greenyellow;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
 }
-#job{
-    color: blue;
-    font-size: 20PX;
-}
-#info{
-    color: teal;
-}
-#author{
+.social-icons{
     font-size: 20px;
 }
-.random-btn{
-    margin: 15px;
-    color: blueviolet;
-    padding: 10px;
-  
- 
-}
-.img-container{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.show-links{
+height: 10rem;
 }
 
