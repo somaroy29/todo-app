@@ -1,16 +1,19 @@
-const btn = document.getElementById("btn");
-const inputBox = document.getElementById("input");
-const ul = document.getElementById("ul");
+const toggleBtn=document.querySelector(".sidebar-toggle");
+const closeBtn=document.querySelector(".btn-close");
+const sidebar=document.querySelector(".sidebar");
 
-btn.addEventListener("click", () => {
-  console.log("btn clicked");
-  console.log(inputBox.value);
-  if (inputBox.value != "") {
-    const li = document.createElement("li");
-    li.textContent = inputBox.value;
-    ul.appendChild(li);
-    inputBox.value = "";
-  }
-});
-
-//
+toggleBtn.addEventListener("click",function(){
+    console.log(sidebar.classList); //--just for checking purpose
+    //method:1 -> long method of toggling
+    // if(sidebar.classList.contains("show-sidebar")){
+    //     sidebar.classList.remove("show-sidebar");
+    // }
+    // else{
+    //     sidebar.classList.add("show-sidebar");
+    // }
+    //method:2 -> alternative and short method(one line method)
+    sidebar.classList.toggle("show-sidebar");
+})
+closeBtn.addEventListener("click",function(){
+sidebar.classList.remove("show-sidebar");
+})

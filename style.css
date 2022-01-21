@@ -1,14 +1,29 @@
-.links{
-    font-size: 30px;
-    text-transform: capitalize;
-    height: 0;
-    overflow: hidden;
-    transition: var(--transition);
+.sidebar{
+    position: fixed;
+    background-color: blanchedalmond;
+    color: #000;
+    height: fit-content;
+    width: 300px;
+    transform: translate(-100%);
 }
 .social-icons{
+    font-size: 30px;
+}
+.btn-close{
     font-size: 20px;
+    background-color: red;
+    position: absolute; 
+    right: 0;
 }
-.show-links{
-height: 10rem;
+.sidebar-toggle{
+    font-size: 20px;
+    background-color: greenyellow;
 }
-
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hotpink;
+    text-align: left;
+}
+.show-sidebar{
+    transform: translate(0);
+}

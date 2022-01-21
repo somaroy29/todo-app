@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>sidebar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <h1>Coding Addict</h1>
-    <nav>
-       <div class ="nav-container">
-       <div class="nav-header">
-<button class="nav-toggle"><i class="fas fa-bars"></i>
-</button>
-       </div>
-       <ul class="links">
-           <li>
-               <a href="index.html">home</a>
-           </li>
-           <li>
-               <a href="about.html">about</a>
-           </li>
-           <li>
-               <a href="project.html">project</a>
-           </li>
-           <li>
-               <a href="contact.html">contact</a>
-           </li>
-       </ul>
-       <ul class="social-icons">
-           <li>
+    <h2>Sidebar Project</h2>
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="btn-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="links">
+            <li>
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <a href="about.html">about</a>
+            </li>
+            <li>
+                <a href="project.html">project</a>
+            </li>
+            <li>
+                <a href="contact.html">contact</a>
+            </li>
+        </ul>
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.twitter.com/">
+                 <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
                <a href="https://www.twitter.com/">
-                <i class="fab fa-facebook-f"></i>
+                 <i class="fab fa-twitter"></i>          
                </a>
-           </li>
-           <li>
-              <a href="https://www.twitter.com/">
-                <i class="fab fa-twitter"></i>          
-              </a>
-        </li>
-        <li>
-              <a href="https://www.twitter.com/">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </li>
-        <li>
-              <a href="https://www.twitter.com/">
-                <i class="fab fa-skype"></i>
-            </a>
-        </li>
-       </ul>
-    </div>
-    </nav>
-    <script src="test.js"></script>
+         </li>
+         <li>
+               <a href="https://www.twitter.com/">
+                 <i class="fab fa-linkedin"></i>
+             </a>
+         </li>
+         <li>
+               <a href="https://www.twitter.com/">
+                 <i class="fab fa-skype"></i>
+             </a>
+         </li>
+        </ul>
+    </aside>
+    <script src="app.js"></script>
 </body>
 </html>
