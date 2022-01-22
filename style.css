@@ -1,29 +1,37 @@
-.sidebar{
-    position: fixed;
-    background-color: blanchedalmond;
-    color: #000;
-    height: fit-content;
-    width: 300px;
-    transform: translate(-100%);
-}
-.social-icons{
+h1{
+    font-family: Copperplate, Papyrus, fantasy;
     font-size: 30px;
+    color: goldenrod;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-style: oblique;
 }
-.btn-close{
-    font-size: 20px;
-    background-color: red;
-    position: absolute; 
-    right: 0;
+.plus-icon{
+    border: 1px solid black;
+    color: goldenrod;
+    
+    margin: 10px;
 }
-.sidebar-toggle{
-    font-size: 20px;
-    background-color: greenyellow;
+.minus-icon{
+    border: 1px solid black;
+    color: goldenrod;
 }
-h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: hotpink;
-    text-align: left;
+.question-text p{
+margin-bottom: 0;
 }
-.show-sidebar{
-    transform: translate(0);
+.question-text {
+    display: none;
+}
+.show-text .question-text{
+    display: block;
+}
+.minus-icon{
+    display: none;
+}
+.show-text .plus-icon{
+    display: none;
+}
+.show-text .minus-icon{
+    display: inline;
 }

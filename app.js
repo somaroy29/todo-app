@@ -1,19 +1,24 @@
-const toggleBtn=document.querySelector(".sidebar-toggle");
-const closeBtn=document.querySelector(".btn-close");
-const sidebar=document.querySelector(".sidebar");
+//  method 1 -> traversing the DOM 
+//=====================================================================
+// const btns = document.querySelectorAll(".question-btn");
+// btns.forEach(function(btn){
+// btn.addEventListener("click",function(e){
+//     const question =e.currentTarget.parentElement.parentElement;
+//     question.classList.toggle("show-text");
+// })
+// })
 
-toggleBtn.addEventListener("click",function(){
-    console.log(sidebar.classList); //--just for checking purpose
-    //method:1 -> long method of toggling
-    // if(sidebar.classList.contains("show-sidebar")){
-    //     sidebar.classList.remove("show-sidebar");
-    // }
-    // else{
-    //     sidebar.classList.add("show-sidebar");
-    // }
-    //method:2 -> alternative and short method(one line method)
-    sidebar.classList.toggle("show-sidebar");
-})
-closeBtn.addEventListener("click",function(){
-sidebar.classList.remove("show-sidebar");
-})
+//  method 2 -> using selectors inside the element
+//=====================================================================
+const questions = document.querySelectorAll(".question")
+questions.forEach(function(question){
+   const btn=question.querySelector(".question-btn")
+   btn.addEventListener("click",function(){
+       questions.forEach(function(item){
+           if(item !== question){
+               item.classList.remove("show-text")
+           }
+       })
+       question.classList.toggle("show-text");
+   });
+});
