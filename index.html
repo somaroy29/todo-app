@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basic game</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--style-->
     <link rel="stylesheet" href="style.css">
+    <title>video project</title>
 </head>
 <body>
-    <div id="game">
-        <div id="character"></div>
-        <div id="block"></div>
+    <div class="preloader">
+        <img src="loader.gif" alt="preloader"/>
     </div>
-    <script src="test.js"></script>
+    <!--video-->
+    <header>
+        <video class="video-container" muted autoplay loop>
+            <source src="./nature.mp4" type="video/mp4">
+        </video>
+        <h1>video project</h1>
+
+        <!--video switch-->
+        <button class="switch-btn">
+            <span>
+                play
+            </span>
+            <span>
+                pause
+            </span>
+            <span class="switch"></span>
+        </button>
+    </header>
+    <script src="app.js"></script>
 </body>
 </html>

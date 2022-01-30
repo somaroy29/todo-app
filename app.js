@@ -1,12 +1,17 @@
-const modalBtn= document.querySelector(".modal-btn");
-const modalOverlay=document.querySelector(".modal-overlay");
-const closeBtn=document.querySelector(".close-btn");
-
-modalBtn.addEventListener("click",function(){
-    modalOverlay.classList.add("open-modal");
+const btn=document.querySelector(".switch-btn");
+const video=document.querySelector(".video-container");
+btn.addEventListener("click",function(){
+    if(!btn.classList.contains("slide")){
+        btn.classList.add("slide");
+        video.pause();
+    }
+    else{
+        btn.classList.remove("slide")
+        video.play();
+    }
+})
+//preloader
+const preloader=document.querySelector(".preloader");
+window.addEventListener("load",function(){
+    preloader.classList.add("hide-proloader");
 });
-
-closeBtn.addEventListener("click",function(){
-    modalOverlay.classList.remove("open-modal");
-});
-
