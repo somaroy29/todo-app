@@ -7,96 +7,82 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!--style-->
     <link rel="stylesheet" href="style.css">
-    <title>menu bar</title>
+    <title>scroll here</title>
 </head>
 <body>
-<section class="menu">
-        <!--title-->
-    <div class="title">
-        <h2>our menu </h2>
-        <div class="underline">
-        </div>
-    </div>
-        <!--filter buttons-->
-        <!--menu items-->
-<div class="section-center"></div>
-    <!-- single item
- <article class="menu-item">
-<img src="pancake.jfif" class="photo" alt="menu item"/>
-<div class="item-info">
-    <header>
-        <h4>buttermilk pancake</h4>
-        <h4 class="price">$21</h4>
-    </header>
-    <p class="item-text">A pancake is a flat cake, often thin and round, 
-        prepared from a starch-based batter that may contain eggs, 
-        milk and butter and cooked on a hot surface such as a griddle or frying pan.</p>
+    <!--header-->
+    <header id="home">
+        <!--navbar-->
+        <nav id="nav">
+            <div class="nav-center">
+                <!--nav header-->
+                <div class="nav-header">
+                    <img src="logo.jfif" alt="logo" class="logo">
+<button class="nav-toggle">
+    <i class="fas fa-bars"></i>
+</button>
+     </div>
+<!--links-->
+<div class="links-container">
+    <ul class="links">
+        <li>
+            <a href="#home" class="scroll-link">home</a>
+        </li>
+        <li>
+            <a href="#about" class="scroll-link">about</a>
+        </li>
+        <li>
+            <a href="#Services" class="scroll-link">services</a>
+        </li>
+        <li>
+            <a href="#tours" class="scroll-link">tours</a>
+        </li>
+    </ul>
 </div>
-</article>
-    end of single item-->
-<!--single item-->
-<!-- <article class="menu-item">
-    <img src="noodles.jfif" class="photo" alt="menu item">
-    <div class="item-info">
-        <header>
-            <h4>chilli noodles</h4>
-            <h4 class="price">$31</h4>
-        </header>
-        <p class="item-text">Noodles are a type of food made from unleavened dough which is rolled flat and cut, 
-            stretched or extruded, into long strips or strings. 
-            Noodles can be refrigerated for short-term storage or dried and stored for future use.</p>
-    </div>
-    </article> -->
-        <!--end of single item-->
-<!--single item-->
-<!-- <article class="menu-item">
-    <img src="shake.jpg" class="photo" alt="menu item">
-    <div class="item-info">
-        <header>
-            <h4>Milkshake Drink</h4>
-            <h4 class="price">$45</h4>
-        </header>
-        <p class="item-text">A milkshake is a sweet drink made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch.</p>
-    </div> -->
-    <!-- </article>
-    <article class="menu-item">
-        <img src="pizza.jfif" class="photo" alt="menu item">
-        <div class="item-info">
-            <header>
-                <h4>chicken pizza</h4>
-                <h4 class="price">$35</h4>
-            </header>
-            <p class="item-text">Pizza is a dish of Italian origin consisting of a usually round, 
-                flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, 
-                which is then baked at a high temperature, traditionally in a wood-fired oven.</p>
-        </div>
-        </article>
-        <article class="menu-item">
-            <img src="mango.jfif" class="photo" alt="menu item">
-            <div class="item-info">
-                <header>
-                    <h4>mango shake</h4>
-                    <h4 class="price">$25</h4>
-                </header>
-                <p class="item-text">Mangoes - You'll need fresh ripe chopped mangoes to make this shake. 
-                    You can also use frozen mango chunks or canned mango pulp.</p>
             </div>
-            </article>  -->
-        <!--end of single item-->        
-<!--filter buttons-->>
-<div class="btn-container">
-    <!-- <button class="filter-btn" type="button" data-id="All">All</button>
-    <button class="filter-btn" type="button" data-id="breakfast">breakfast</button>
-    <button class="filter-btn" type="button" data-id="evening snacks">evening snacks</button>
-    <button class="filter-btn" type="button" data-id="shake">shake</button> -->
+        </nav>
+        <!-- banner -->
+<div class="banner">
+    <div class="container">
+        <h1>scroll project</h1>
+        <p>
+            A project is any undertaking, carried out individually or collaboratively and possibly involving research or design, that is carefully planned to achieve a particular aim.
+        </p>
+        <div class="scroll-link-parent">
+        <a href="#tours" class="scroll-link btn btn-white">explore tours</a></div>
+    </div>
 </div>
-
-
-
-
-
-
-</section>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+        <div class="title">
+            <h2>ABOUT <span>US</span></h2>
+        </div>
+    </section>
+    <!-- Services -->
+    <section id="Services" class="section">
+        <div class="title">
+            <h2>OUR <span>SERVICES</span></h2>
+        </div>
+    </section>
+    <!-- tours -->
+    <section id="tours" class="section">
+        <div class="title">
+            <h2>FEATURED <span>TOURS</span></h2>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+        <p>
+            The symbol © (the letter C in a circle);<span id="date">2022</span>
+        </p>
+    </footer>
+    <!-- back to top button -->
+    <a href="#home" class="scroll-link top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
     <script src="app.js"></script>
+
 </body>
 </html>
