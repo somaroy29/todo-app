@@ -7,81 +7,65 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!--style-->
     <link rel="stylesheet" href="style.css">
-    <title>scroll here</title>
+    <title>tabs here</title>
 </head>
 <body>
-    <!--header-->
-    <header id="home">
-        <!--navbar-->
-        <nav id="nav">
-            <div class="nav-center">
-                <!--nav header-->
-                <div class="nav-header">
-                    <img src="logo.jfif" alt="logo" class="logo">
-<button class="nav-toggle">
-    <i class="fas fa-bars"></i>
-</button>
-     </div>
-<!--links-->
-<div class="links-container">
-    <ul class="links">
-        <li>
-            <a href="#home" class="scroll-link">home</a>
-        </li>
-        <li>
-            <a href="#about" class="scroll-link">about</a>
-        </li>
-        <li>
-            <a href="#Services" class="scroll-link">services</a>
-        </li>
-        <li>
-            <a href="#tours" class="scroll-link">tours</a>
-        </li>
-    </ul>
-</div>
-            </div>
-        </nav>
-        <!-- banner -->
-<div class="banner">
-    <div class="container">
-        <h1>scroll project</h1>
-        <p>
-            A project is any undertaking, carried out individually or collaboratively and possibly involving research or design, that is carefully planned to achieve a particular aim.
-        </p>
-        <div class="scroll-link-parent">
-        <a href="#tours" class="scroll-link btn btn-white">explore tours</a></div>
-    </div>
-</div>
-    </header>
-    <!-- about -->
-    <section id="about" class="section">
+    <section>
         <div class="title">
-            <h2>ABOUT <span>US</span></h2>
+            <h2>About</h2>
+            <p>
+                In its most general sense, the term "world" refers to the totality of entities, to the whole of reality or to everything that is.[1] The nature of the world has been conceptualized differently in different fields. Some conceptions see the world as unique while others talk of a "plurality of worlds". Some treat the world as one simple object while others analyze the world as a complex made up of many parts.
+            </p>
+        </div>
+        <div class="about-center section-center">
+            <article>
+                <img src="Earth.jpg" alt="earth" height="300px" width="300px" >
+
+            </article>
+            <article class="about">
+                <!-- btn-container -->
+                <div class="btn-container">
+                    <button class="tab-btn active" data-id="history">history</button>
+                    <button class="tab-btn" data-id="vision">vision</button>
+                    <button class="tab-btn" data-id="goals">goals</button>
+                </div>
+                <article class="about-content">
+                    <!-- single item -->
+                    <div class="content active" id="history">
+                        <h4>history :</h4>
+                        <!-- history -->
+                        <p>
+                            World history or global history as a field of historical study examines history from a global perspective. It emerged centuries ago; leading practitioners have included Voltaire, Hegel, Karl Marx and Arnold J. Toynbee. 
+                        </p>
+                    </div>
+                    <!-- end of single item -->
+                    <!-- single item -->
+                    <div class="content" id="vision">
+                        <h4>vision :</h4>
+                        <!-- vision -->
+                        <p>
+                            World Vision is an international partnership of Christians whose mission is to follow our Lord and Savior Jesus Christ in working with the poor and oppressed to promote human transformation, seek justice, and bear witness to the good news of the Kingdom of God.
+                        </p>
+                        <ul>
+                            <li>list item</li>
+                            <li>list item</li>
+                            <li>list item</li>
+                        </ul>
+                    </div>
+                    <!-- end of single item -->
+                    <!-- single item -->
+                    <div class="content" id="goals">
+                        <h4>goals :</h4>
+                        <!-- goals -->
+                        <p>
+                            The Sustainable Development Goals or Global Goals are a collection of 17 interlinked global goals designed to be a "blueprint to achieve a better and more sustainable future for all".The SDGs were set up in 2015 by the United Nations General Assembly and are intended to be achieved by the year 2030.
+                        </p>
+                    </div>
+                    <!-- end of single item -->
+                </article>
+            </article>
         </div>
     </section>
-    <!-- Services -->
-    <section id="Services" class="section">
-        <div class="title">
-            <h2>OUR <span>SERVICES</span></h2>
-        </div>
-    </section>
-    <!-- tours -->
-    <section id="tours" class="section">
-        <div class="title">
-            <h2>FEATURED <span>TOURS</span></h2>
-        </div>
-    </section>
-    <!-- footer -->
-    <footer class="section">
-        <p>
-            The symbol © (the letter C in a circle);<span id="date">2022</span>
-        </p>
-    </footer>
-    <!-- back to top button -->
-    <a href="#home" class="scroll-link top-link">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    <!-- javascript -->
     <script src="app.js"></script>
 
 </body>
