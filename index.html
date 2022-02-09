@@ -7,22 +7,36 @@
     <!-- style -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
-    <title>lorel ipsum</title>
+    <!-- <script src="app.js" defer="defer"></script> -->
+    <title>slider</title>
 </head>
 <body>
-    <section class="section-center">
-        <h2>tired of boring lorem ipsum?</h2>
-        <form class="lorem-form">
-            <label for="amount">paragraphs :</label>
-            <input type="number" name="amount" id="amount" placeholder="5">
-            <button class="btn" type="submit">generate</button>.
-        </form>
-        <article class="lorem-text"></article>
-    </section>
-
-    
-
+    <div class="slide-container">
+        <div class="slide">
+            <img src="sea.jfif" alt="sea" class="slide-img">
+            <h1>1</h1>
+        </div>
+        <div class="slide">
+            <img src="hill.jfif" alt="hill" class="slide-img">
+            <h1>2</h1>
+        </div>
+        <div class="slide">
+            <img src="beach.jfif" alt="beach" class="slide-img">
+            <h1>3</h1>
+        </div>
+        <div class="slide">
+            <div>
+                <img src="town.jfif" alt="town" class="slide-img">
+                <h4>kerala dee</h4>
+                <h1>4</h1>
+            </div> 
+        </div>
+    </div>
+    <div class="btn-container">
+        <button type="button" class="prevBtn">prev</button>
+        <button type="button" class="nextBtn">next</button>
+    </div>
     <!-- javascript -->
-     <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
